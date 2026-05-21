@@ -1,14 +1,26 @@
 const App=()=>{
   return(
-    <div className="Container">
+    <div className="container">
       <div className="chatbotpopup">
+        {/*chat header */}
         <div className="chat-header">
           <div className="header-info">
-            <h2 className="logo-txt">ChatBot</h2>
 
+            <h2 className="logo-txt">ChatBot</h2>
+            </div>
+            </div>
+      
             {/*chat body*/}
             <div className="chatbody">
-              <div className="botmessage">
+              
+              <div className="message botmessage">
+
+
+                <div className="boticon">
+    🤖
+  </div>
+
+
                 <p className="messagetext">
                   Good Day!<br/>
                   How can I help you
@@ -16,20 +28,19 @@ const App=()=>{
 
               </div>
 
-              <div className="usermessage">
-                nigga nigga nigga
+              <div className="message usermessage">
+                <p className="messagetext">nigga nigga nigga</p>
               </div>
-
             </div>
 
 
 
 
             {/*chat footer */}
-            <div className="chatfooter">
-              <form action="#" className="chatform">
-                <input type="text" placeholder="Message: " className="messageinput" required />
-                <button className="materials-symbols-rounded"><span class="material-symbols-outlined">
+            <div className="chat-footer">
+              <form action="#" className="chat-form">
+                <input type="text" placeholder="Message: " className="message-input" required />
+                <button className="materials-symbols-rounded"><span className="material-symbols-outlined">
                     send
                   </span>
                   </button>
@@ -40,8 +51,8 @@ const App=()=>{
             </div>
           </div>
         </div>
-      </div>
-    </div>
+
+  
 
 
 

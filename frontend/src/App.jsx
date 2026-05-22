@@ -1,3 +1,5 @@
+import "./theme.css";
+import './index.css'
 const App=()=>{
   return(
     <div className="container">
@@ -29,7 +31,7 @@ const App=()=>{
               </div>
 
               <div className="message usermessage">
-                <p className="messagetext">nigga nigga nigga</p>
+                <p className="messagetext">Hi there</p>
               </div>
             </div>
 

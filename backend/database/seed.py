@@ -42,6 +42,64 @@ sample_intents=[
 },
 
 
+{
+    "name": "order_cancel",
+    "patterns":["cancel","cancel my order"],
+    "responses":["please provide order id"],
+
+
+
+},
+
+{
+    "name": "products",
+    "patterns":["what are the services you offer","services"],
+    "responses":["here is our catalogue: "],
+
+
+
+},
+
+
+{
+    "name": "suppport",
+    "patterns":["support","human"],
+    "responses":["Someone will shortly assist you"],
+
+
+
+},
+
+
+{
+    "name": "information",
+    "patterns":["tell me","price of"],
+    "responses":["details of the products are as follows"],
+
+
+
+},
+
+
+{
+    "name": "thanks",
+    "patterns":["Thanks","thankyou","bye"],
+    "responses":["welcome"],
+
+
+
+},
+
+
+{
+    "name": "order_status",
+    "patterns":["order status","where is my order"],
+    "responses":["please provide order id"],
+
+
+
+},
+
 
 
 

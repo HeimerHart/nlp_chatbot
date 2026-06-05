@@ -1,0 +1,101 @@
+text,intent
+How can I pay my bill?,billing
+I have a billing issue,billing
+My invoice is incorrect,billing
+Why was I charged twice?,billing
+Can I change my payment method?,billing
+I need help with billing,billing
+My payment was declined,billing
+How do I update my card details?,billing
+I was overcharged,billing
+Show my invoice,billing
+Where can I view my bill?,billing
+My payment failed,billing
+I need a billing statement,billing
+Can I get a copy of my invoice?,billing
+How much do I owe?,billing
+What payment methods are accepted?,billing
+I want to check my charges,billing
+My account was billed incorrectly,billing
+Can I pay using UPI?,billing
+I have a question about my payment,billing
+How can I pay my bill?,billing
+I have a billing issue,billing
+My invoice is incorrect,billing
+Why was I charged twice?,billing
+Can I change my payment method?,billing
+I need help with billing,billing
+My payment was declined,billing
+How do I update my card details?,billing
+I was overcharged,billing
+Show my invoice,billing
+Where can I view my bill?,billing
+My payment failed,billing
+I need a billing statement,billing
+Can I get a copy of my invoice?,billing
+How much do I owe?,billing
+What payment methods are accepted?,billing
+I want to check my charges,billing
+My account was billed incorrectly,billing
+Can I pay using UPI?,billing
+I have a question about my payment,billing
+I want a refund,refund
+How do I get a refund?,refund
+Refund my money,refund
+Return my payment,refund
+I need reimbursement,refund
+Can I request a refund?,refund
+My refund is pending,refund
+Refund request status,refund
+I want to return an item,refund
+How long does a refund take?,refund
+I was charged wrongly,refund
+Cancel and refund my order,refund
+When will I receive my refund?,refund
+Refund not received,refund
+Please process my refund,refund
+I need a return and refund,refund
+How can I return a product?,refund
+I am unhappy and want a refund,refund
+Refund amount not credited,refund
+Requesting a refund,refund
+Hello,general_inquiry
+Hi there,general_inquiry
+Can you help me?,general_inquiry
+I have a question,general_inquiry
+What services do you provide?,general_inquiry
+Tell me more about your company,general_inquiry
+Can you assist me?,general_inquiry
+Good morning,general_inquiry
+Good evening,general_inquiry
+How are you?,general_inquiry
+I need information,general_inquiry
+What can you do?,general_inquiry
+Can I ask something?,general_inquiry
+I want to know more,general_inquiry
+Please help me,general_inquiry
+Thank you,general_inquiry
+Thanks,general_inquiry
+Goodbye,general_inquiry
+See you later,general_inquiry
+Nice to meet you,general_inquiry
+The app is crashing,technical_support
+I cannot login,technical_support
+Website is not working,technical_support
+Password reset failed,technical_support
+I am getting an error,technical_support
+The page won't load,technical_support
+Login issue,technical_support
+My account is locked,technical_support
+Application not responding,technical_support
+System error occurred,technical_support
+Unable to access my account,technical_support
+The website is down,technical_support
+Bug in the application,technical_support
+App keeps freezing,technical_support
+Server error message,technical_support
+I forgot my password,technical_support
+The software is malfunctioning,technical_support
+I cannot sign in,technical_support
+Technical issue with my account,technical_support
+Need technical assistance,technical_support

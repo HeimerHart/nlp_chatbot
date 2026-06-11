@@ -1,4 +1,30 @@
 text,intent
+Thank you,bye
+Thanks,bye
+bye,bye
+byeee,bye
+Goodbye,bye
+hello,greeting
+hi,greeting
+hey,greeting
+good morning,greeting
+good evening,greeting
+good afternoon,greeting
+greetings,greeting
+howdy,greeting
+hiya,greeting
+hello there,greeting
+hey there,greeting
+nice to meet you,greeting
+what's up,greeting
+good day,greeting
+morning,greeting
+evening,greeting
+hi chatbot,greeting
+hello bot,greeting
+hey bot,greeting
+greetings friend,greeting
+How are you?,greeting
 How can I pay my bill?,billing
 I have a billing issue,billing
 My invoice is incorrect,billing
@@ -66,17 +92,11 @@ I have a question,general_inquiry
 What services do you provide?,general_inquiry
 Tell me more about your company,general_inquiry
 Can you assist me?,general_inquiry
-Good morning,general_inquiry
-Good evening,general_inquiry
-How are you?,general_inquiry
 I need information,general_inquiry
 What can you do?,general_inquiry
 Can I ask something?,general_inquiry
 I want to know more,general_inquiry
 Please help me,general_inquiry
-Thank you,general_inquiry
-Thanks,general_inquiry
-Goodbye,general_inquiry
 See you later,general_inquiry
 Nice to meet you,general_inquiry
 The app is crashing,technical_support

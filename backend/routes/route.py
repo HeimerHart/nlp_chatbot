@@ -10,4 +10,7 @@ async def chatbot(request: ChatRequest):
 
     logger.info('Request to chatbot')
 
-    return await process_chat(request.message)
+    return await process_chat(
+        request.session_id,
+        request.message
+    )

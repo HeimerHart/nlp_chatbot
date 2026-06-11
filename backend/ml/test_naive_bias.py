@@ -8,7 +8,7 @@ vectorizer = joblib.load(
     "backend/models/nb_vectorizer.pkl"
 )
 
-query = ["I want a gun"]
+query = ["hi"]
 
 query_vector = vectorizer.transform(query)
 

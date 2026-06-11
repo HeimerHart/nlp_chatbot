@@ -1,1 +1,1 @@
-intent_classifier.pkl
+nb_vectorizer.pkl

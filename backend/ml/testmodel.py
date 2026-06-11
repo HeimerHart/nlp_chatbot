@@ -9,7 +9,9 @@ vectorizer = joblib.load(
 )
 
 query = [
-    "eh"
+    "no thanks",
+    "price?",
+    "are you alive?"
 ]
 
 vector = vectorizer.transform(
@@ -19,5 +21,7 @@ vector = vectorizer.transform(
 prediction = model.predict(
     vector
 )
-
-print(prediction[0])
+for i, j in zip(query, prediction):
+    print("Query:", i)
+    print("Prediction:", j)
+    print()

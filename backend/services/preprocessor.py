@@ -73,7 +73,7 @@ class NLPPreprocessor:
         tokens = self.remove_stopwords(tokens)
 
         tokens = self.lemmatize(tokens)
-
+        #return " ".join(tokens)
         return tokens
     
 
@@ -85,7 +85,7 @@ result = processor.preprocess(
     "Hello! I want to return my orders."
 )
 
-print(result)
+#print(result)
 
 
 queries = [
@@ -95,4 +95,4 @@ queries = [
 ]
 
 features = processor.extract_features(queries)
-print(features)
+#print(features)

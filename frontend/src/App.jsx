@@ -22,12 +22,19 @@ const [loading, setLoading] = useState(false);
 
 
 
+
+
+
 const sendMessage = async () => {
 
   if (!message.trim()) {
     return;
   }
 
+
+
+
+  
   const userMessage = {
     sender: "user",
     text: message

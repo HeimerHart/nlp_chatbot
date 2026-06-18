@@ -4,9 +4,13 @@ from utils.logger import logger
 import os
 from fastapi.middleware.cors import CORSMiddleware
 from routes.route import router
+from routes.auth_route import router as auth_router
 
 app = FastAPI()
 logger.info('Starting API...')
+
+
+app.include_router(auth_router)
 
 # add middleware
 app.add_middleware(

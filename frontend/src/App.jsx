@@ -55,6 +55,8 @@ const sendMessage = async () => {
   }
 );
 
+console.log(response.data);
+
 const botMessage = {
   sender: "bot",
   text: response.data.response

@@ -254,3 +254,25 @@
  2026-06-12 02:30:42,106 - INFO - User message: hi
  2026-06-12 02:30:46,057 - INFO - Request to chatbot
  2026-06-12 02:30:46,059 - INFO - User message: hwllo
+ 2026-06-12 15:53:35,100 - INFO - Starting API...
+ 2026-06-12 15:53:40,708 - INFO - Starting API...
+ 2026-06-12 15:54:25,755 - INFO - Request to chatbot
+ 2026-06-12 15:54:25,755 - INFO - User message: hi
+ 2026-06-12 15:54:56,411 - INFO - Request to chatbot
+ 2026-06-12 15:54:56,411 - INFO - User message: hi
+ 2026-06-12 15:58:20,951 - INFO - Request to chatbot
+ 2026-06-12 15:58:20,952 - INFO - User message: hi
+ 2026-06-12 16:12:05,735 - INFO - Starting API...
+ 2026-06-12 16:12:14,239 - INFO - Starting API...
+ 2026-06-12 16:12:22,981 - INFO - Request to chatbot
+ 2026-06-12 16:12:22,982 - INFO - User message: hi
+ 2026-06-12 16:12:37,794 - INFO - Request to chatbot
+ 2026-06-12 16:12:37,794 - INFO - User message: hi
+ 2026-06-12 16:14:31,812 - INFO - Request to chatbot
+ 2026-06-12 16:14:31,812 - INFO - User message: hello
+ 2026-06-12 16:15:49,126 - INFO - Request to chatbot
+ 2026-06-12 16:15:49,127 - INFO - User message: .
+ 2026-06-12 16:22:15,798 - INFO - Request to chatbot
+ 2026-06-12 16:22:15,798 - INFO - User message: i want to return
+ 2026-06-12 16:22:30,208 - INFO - Request to chatbot
+ 2026-06-12 16:22:30,208 - INFO - User message: cls

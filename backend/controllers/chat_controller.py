@@ -2,7 +2,7 @@ from utils.logger import logger
 from database.mongodb import db
 from services.intentclassifier import predict_intent
 from services.preprocessor import NLPPreprocessor
-from services.intentclassifier import predict_intent
+from services.faq import get_faq_response
 
 
 processor = NLPPreprocessor()
@@ -19,11 +19,22 @@ async def process_chat(
 
     logger.info(f'User message: {message}')
 
+    faq_response = get_faq_response(message)
 
+    if faq_response:
 
-
+        return {
+            "session_id": session_id,
+            "intent": faq_response["intent"],
+            "response": faq_response["response"]
+        }
 
     
+
+
+
+
+
     processed_tokens = processor.preprocess(message)
 
     processed_text = " ".join(processed_tokens)

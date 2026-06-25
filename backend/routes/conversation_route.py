@@ -1,0 +1,41 @@
+from fastapi import APIRouter
+from database.mongodb import db
+
+router = APIRouter(
+    prefix="/api/conversations",
+    tags=["Conversations"]
+)
+
+conversation_collection = db["conversations"]
+
+
+@router.get("/")
+async def get_all_conversations():
+
+    conversations = list(
+        conversation_collection.find(
+            {},
+            {"_id": 0}
+        )
+    )
+
+    return conversations
+
+
+@router.get("/{session_id}")
+async def get_session_history(
+    session_id: str
+):
+
+    conversations = list(
+        conversation_collection.find(
+            {
+                "session_id": session_id
+            },
+            {
+                "_id": 0
+            }
+        )
+    )
+
+    return conversations

@@ -5,6 +5,7 @@ import os
 from fastapi.middleware.cors import CORSMiddleware
 from routes.route import router
 from routes.auth_route import router as auth_router
+from routes.conversation_route import router as conversation_router
 
 app = FastAPI()
 logger.info('Starting API...')

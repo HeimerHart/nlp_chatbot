@@ -9,8 +9,10 @@ router = APIRouter()
 async def chatbot(request: ChatRequest):
 
     logger.info('Request to chatbot')
+    logger.info(f"Context: {request.context}")
 
     return await process_chat(
         request.session_id,
-        request.message
+        request.message,
+        request.context
     )

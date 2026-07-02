@@ -27,6 +27,10 @@ app.add_middleware(
 
 #include routs
 
+app.include_router(
+    conversation_router
+)
+
 app.include_router(router)
 
 @app.get('/')

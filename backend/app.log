@@ -314,3 +314,53 @@
  2026-06-19 15:50:14,091 - INFO - Starting API...
  2026-06-19 15:50:20,729 - INFO - Starting API...
  2026-06-19 15:51:24,945 - INFO - Regester request: user@example.com
+ 2026-07-03 00:30:19,997 - INFO - Starting API...
+ 2026-07-03 00:30:27,869 - INFO - Starting API...
+ 2026-07-03 00:41:13,286 - INFO - Starting API...
+ 2026-07-03 00:41:35,578 - INFO - Starting API...
+ 2026-07-03 00:42:34,077 - INFO - Starting API...
+ 2026-07-03 00:43:31,118 - INFO - Starting API...
+ 2026-07-03 00:44:21,674 - INFO - Starting API...
+ 2026-07-03 00:44:31,433 - INFO - Request to chatbot
+ 2026-07-03 00:44:31,433 - INFO - Context: []
+ 2026-07-03 00:44:54,309 - INFO - Starting API...
+ 2026-07-03 00:45:00,991 - INFO - Starting API...
+ 2026-07-03 00:46:13,113 - INFO - Request to chatbot
+ 2026-07-03 00:46:13,113 - INFO - Context: []
+ 2026-07-03 00:47:07,422 - INFO - Starting API...
+ 2026-07-03 00:47:07,435 - INFO - Request to chatbot
+ 2026-07-03 00:47:07,435 - INFO - Context: []
+ 2026-07-03 00:47:44,422 - INFO - Starting API...
+ 2026-07-03 00:47:51,938 - INFO - Starting API...
+ 2026-07-03 00:47:55,958 - INFO - Request to chatbot
+ 2026-07-03 00:47:55,958 - INFO - Context: []
+ 2026-07-03 00:49:37,603 - INFO - Starting API...
+ 2026-07-03 00:49:47,286 - INFO - Starting API...
+ 2026-07-03 00:49:47,298 - INFO - Request to chatbot
+ 2026-07-03 00:49:47,298 - INFO - Context: []
+ 2026-07-03 00:49:47,298 - INFO - User message: hi
+ 2026-07-03 00:49:47,298 - INFO - Context: []
+ 2026-07-03 00:50:47,331 - INFO - Request to chatbot
+ 2026-07-03 00:50:47,331 - INFO - Context: []
+ 2026-07-03 00:50:47,331 - INFO - User message: hi
+ 2026-07-03 00:50:47,331 - INFO - Context: []
+ 2026-07-03 00:51:38,529 - INFO - Request to chatbot
+ 2026-07-03 00:51:38,535 - INFO - Context: ['hi', 'hi']
+ 2026-07-03 00:51:38,535 - INFO - User message: hy
+ 2026-07-03 00:51:38,535 - INFO - Context: ['hi', 'hi']
+ 2026-07-03 00:51:44,583 - INFO - Request to chatbot
+ 2026-07-03 00:51:44,585 - INFO - Context: ['hi', 'hi', 'hy', 'I do not understand']
+ 2026-07-03 00:51:44,585 - INFO - User message: hi
+ 2026-07-03 00:51:44,585 - INFO - Context: ['hi', 'hi', 'hy', 'I do not understand']
+ 2026-07-03 00:51:52,633 - INFO - Request to chatbot
+ 2026-07-03 00:51:52,641 - INFO - Context: ['hi', 'hy', 'I do not understand', 'hi', 'hi']
+ 2026-07-03 00:51:52,641 - INFO - User message: hyye
+ 2026-07-03 00:51:52,641 - INFO - Context: ['hi', 'hy', 'I do not understand', 'hi', 'hi']
+ 2026-07-03 00:51:58,783 - INFO - Request to chatbot
+ 2026-07-03 00:51:58,783 - INFO - Context: ['I do not understand', 'hi', 'hi', 'hyye', 'I do not understand']
+ 2026-07-03 00:51:58,783 - INFO - User message: hehe
+ 2026-07-03 00:51:58,783 - INFO - Context: ['I do not understand', 'hi', 'hi', 'hyye', 'I do not understand']
+ 2026-07-03 00:52:12,700 - INFO - Request to chatbot
+ 2026-07-03 00:52:12,707 - INFO - Context: []
+ 2026-07-03 00:52:12,707 - INFO - User message: ohh
+ 2026-07-03 00:52:12,707 - INFO - Context: []

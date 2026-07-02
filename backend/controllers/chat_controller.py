@@ -14,26 +14,32 @@ conversation_collection = db["conversations"]
 
 async def process_chat(
     session_id: str,
-    message: str
+    message: str,
+    context: list = []
 ):
 
     logger.info(f'User message: {message}')
+    logger.info(f'Context: {context}')
 
     faq_response = get_faq_response(message)
 
     if faq_response:
+
+        conversation_collection.insert_one(
+            {
+                "session_id": session_id,
+                "user_id": "user123",
+                "user_message": message,
+                "intent": faq_response["intent"],
+                "bot_response": faq_response["response"]
+            }
+        )
 
         return {
             "session_id": session_id,
             "intent": faq_response["intent"],
             "response": faq_response["response"]
         }
-
-    
-
-
-
-
 
     processed_tokens = processor.preprocess(message)
 
@@ -47,22 +53,17 @@ async def process_chat(
         }
     )
 
-
-
-
-
-    #if intent is found
     if intent:
         response = intent["responses"][0]
         conversation_collection.insert_one(
             {
                 "session_id": session_id,
+                "user_id": "user123",
                 "user_message": message,
                 "intent": intent_name,
                 "bot_response": response
             }
         )
-
 
         return {
             "session_id": session_id,

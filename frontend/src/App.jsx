@@ -2,8 +2,22 @@ import "./theme.css";
 import "./index.css";
 import { useState, useEffect } from "react";
 import api from "./api";
+import Admin from "./AdminDashboard";
+import Login from "./login"; 
 
 const App = () => {
+
+  const [loggedIn, setLoggedIn]= useState(
+    !!localStorage.getItem("token")
+  )
+  
+  const isAdmin = () => {
+  const token = localStorage.getItem("token");
+  if (!token) return false;
+
+  const payload = JSON.parse(atob(token.split(".")[1]));
+  return payload.role === "admin";
+};
 
   const [context, setContext] = useState([]);
 
@@ -96,155 +110,7 @@ const App = () => {
 
   };
 
-  return (
-
-    <div className="container">
-
-      <div className="sidebar">
-
-        <h3>History</h3>
-
-        {history.slice(-10).map((chat, index) => (
-
-          <div
-            key={index}
-            style={{
-              marginBottom: "10px",
-              padding: "8px",
-              background: "#ffffff20",
-              borderRadius: "8px"
-            }}
-          >
-
-            <p>{chat.user_message}</p>
-
-          </div>
-
-        ))}
-
-      </div>
-
-      <div className="chatbotpopup">
-
-        <div className="chat-header">
-
-          <div className="header-info">
-
-            <h2 className="logo-txt">
-              ChatBot
-            </h2>
-
-          </div>
-
-        </div>
-
-        <div className="chatbody">
-
-          {messages.map((msg, index) => (
-
-            <div
-              key={index}
-              className={
-                msg.sender === "bot"
-                  ? "message botmessage"
-                  : "message usermessage"
-              }
-            >
-
-              {msg.sender === "bot" && (
-
-                <div className="boticon">
-                  🤖
-                </div>
-
-              )}
-
-              <div>
-
-                <p className="messagetext">
-                  {msg.text}
-                </p>
-
-                {msg.suggestions && (
-
-                  <div className="suggestions">
-
-                    {msg.suggestions.map((suggestion, i) => (
-
-                      <button
-                        key={i}
-                        onClick={() => setMessage(suggestion)}
-                      >
-                        {suggestion}
-                      </button>
-
-                    ))}
-
-                  </div>
-
-                )}
-
-              </div>
-
-            </div>
-
-          ))}
-
-          {loading && (
-
-            <div className="message botmessage">
-
-              <div className="boticon">
-                🤖
-              </div>
-
-              <p className="messagetext">
-                Typing...
-              </p>
-
-            </div>
-
-          )}
-
-        </div>
-
-        <div className="chat-footer">
-
-          <form
-            className="chat-form"
-            onSubmit={(e) => e.preventDefault()}
-          >
-
-            <input
-              type="text"
-              placeholder="Message..."
-              className="message-input"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-            />
-
-            <button
-              type="button"
-              className="materials-symbols-rounded"
-              onClick={sendMessage}
-            >
-
-              <span className="material-symbols-outlined">
-                send
-              </span>
-
-            </button>
-
-          </form>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  );
+return <Admin />;
 
 };
 

@@ -6,11 +6,18 @@ from fastapi.middleware.cors import CORSMiddleware
 from routes.route import router
 from routes.auth_route import router as auth_router
 from routes.conversation_route import router as conversation_router
+from routes.admin_route import router as admin_router
+from routes.analytics_route import router as analytics_router
+
 
 app = FastAPI()
 logger.info('Starting API...')
 
+app.include_router(
+    analytics_router
+)
 
+app.include_router(admin_router)
 app.include_router(auth_router)
 
 # add middleware
@@ -44,7 +51,6 @@ async def health() -> dict:
     return{
         'message':'Health'  
           }
-
 
 
 

@@ -27,7 +27,7 @@ async def register_user(email: str, password : str):
         {
             "email":email,
             "password":hashed_password.decode("utf-8"),
-         
+            "role": "user"
          }
     )
     return{
@@ -70,12 +70,11 @@ async def login_user(
         return {
             "message": "Invalid credentials"
         }
-
-    token = create_access_token(
-        {
-            "email": user["email"]
-        }
-    )
+    
+    token = create_access_token({
+        "email": user["email"],
+        "role": user.get("role", "user")
+    })
 
     return {
         "token": token

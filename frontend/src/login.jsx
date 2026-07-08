@@ -1,7 +1,7 @@
 import { useState } from "react";
 import api from "./api";
 
-function Login() {
+function Login({setLoggedIn}) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -19,6 +19,8 @@ function Login() {
         "token",
         response.data.token
       );
+
+      setLoggedIn(true);
 
       alert("Login Successful");
     } catch {

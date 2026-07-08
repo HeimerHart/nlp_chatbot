@@ -5,7 +5,25 @@ import api from "./api";
 import Admin from "./AdminDashboard";
 import Login from "./login"; 
 
+
 const App = () => {
+
+
+  const getRole = () => {
+
+    const token = localStorage.getItem("token");
+
+    if (!token) return null;
+
+    const payload = JSON.parse(
+        atob(token.split(".")[1])
+    );
+
+    return payload.role;
+};
+
+
+
 
   const [loggedIn, setLoggedIn]= useState(
     !!localStorage.getItem("token")
@@ -110,7 +128,20 @@ const App = () => {
 
   };
 
-return <Admin />;
+  return <Login setLoggedIn={setLoggedIn} />;
+
+  if (!loggedIn) {
+    return <Login setLoggedIn={setLoggedIn} />;
+}
+
+if (getRole() === "admin") {
+    return <Admin />;
+}
+
+return <ChatBot />;
+
+
+/* return <Admin />; */
 
 };
 

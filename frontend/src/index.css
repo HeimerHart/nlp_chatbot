@@ -1,12 +1,13 @@
 /*importing google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
 
-* {
+*{
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0%;
   box-sizing: border-box;
   color: #fff;
+  background-color: #6648ff;
 }
 
 body {

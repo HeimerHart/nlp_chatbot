@@ -5,6 +5,7 @@ from services.preprocessor import NLPPreprocessor
 from services.faq import get_faq_response
 
 
+
 processor = NLPPreprocessor()
 
 intent_collection = db["intents"]

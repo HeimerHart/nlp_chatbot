@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.admin-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.admin-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.admin-header h1 {
+    margin: 0;
+    color: #1f2937;
+    font-size: 32px;
+}
+
+button {
+    position: absolute;
+    right: 0;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #3828e9;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+.section h2 {
+    color: #2563eb;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.card {
+    background: #f8fafc;
+    border-left: 5px solid #2563eb;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.card:hover {
+    background: #eef4ff;
+}
+
+.session-id {
+    color: #1d4ed8;
+    font-weight: bold;
+}
+
+.hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 30px 0;
+}
+

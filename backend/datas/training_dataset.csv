@@ -1,8 +1,34 @@
 text,intent
-Thank you,bye
-Thanks,bye
+Thank you,thankyou
+Thanks!,thankyou
+Thank you!,thankyou
+Thanks a lot!,thankyou
+Thanks so much!,thankyou
+Many thanks!,thankyou
+Appreciate it!,thankyou
+"Thanks, I really appreciate it.",thankyou
+"You're the best, thanks!",thankyou
+Thanks,thankyou
 bye,bye
 byeee,bye
+Bye!,bye
+Goodbye!,bye
+See you later!,bye
+See you soon!,bye
+Catch you later!,bye
+Take care!,bye
+Have a good one!,bye
+Talk to you later!,bye
+Until next time!,bye
+Take care!,bye
+See you around!,bye
+Until next time.,bye
+All the best!,bye
+Stay safe.,bye
+Have a great day!,bye
+Catch you later!,bye
+Goodbye for now.,bye
+Talk soon!,bye
 Goodbye,bye
 hello,greeting
 hi,greeting
@@ -119,3 +145,33 @@ The software is malfunctioning,technical_support
 I cannot sign in,technical_support
 Technical issue with my account,technical_support
 Need technical assistance,technical_support
+I want to speak to a human.,S
+Can I talk to a real person?,human
+Connect me to an agent.,human
+I need customer support.,human
+Let me speak to someone.,human
+Can I talk to a representative?,human
+I'd like to speak with a support agent.,human
+Transfer me to a human.,human
+Put me through to customer service.,human
+I need to speak with your team.,human
+This chatbot isn't helping.,human
+I need a real person.,human
+Can I stop talking to the bot?,human
+I want to talk to someone else.,human
+Please connect me with an actual person.,human
+You're not understanding me.,human
+I need human assistance.,human
+Get me a support agent.,human
+I need someone who can actually help.,human
+Can you escalate this to a human?,human
+Human.,human
+Agent.,human
+Live agent.,human
+Representative.,human
+Customer service.,human
+Support.,human
+Help me.,human
+Real person.,human
+Talk to someone.,human
+Connect me.,human

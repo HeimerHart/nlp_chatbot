@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import api from "./api";
 import AnalyticsDashboard from "./AnalyticsDashboard";
+import "./AdminDashboard.css";
 
 function Admin() {
 
@@ -44,11 +45,27 @@ function Admin() {
         setConversations(conversationResponse.data);
     };
 
+    const logout = () => {
+    localStorage.removeItem("token");
+    window.location.reload();
+};
+
     return (
 
         <div style={{padding:"20px"}}>
 
             <h1>Admin Dashboard</h1>
+
+
+            <button
+    onClick={logout}
+    style={{
+        float: "right",
+        padding: "8px 16px",
+        cursor: "pointer"
+    }}>
+    Logout
+</button>
 
             <hr/>
 

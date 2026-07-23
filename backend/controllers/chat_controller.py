@@ -3,7 +3,7 @@ from database.mongodb import db
 from services.intentclassifier import predict_intent
 from services.preprocessor import NLPPreprocessor
 from services.faq import get_faq_response
-
+from services.ner_service import extract_entities
 
 
 processor = NLPPreprocessor()
@@ -20,6 +20,10 @@ async def process_chat(
 ):
 
     logger.info(f'User message: {message}')
+
+    entities = extract_entities(message)
+    logger.info(f"Entities: {entities}")
+
     logger.info(f'Context: {context}')
 
     faq_response = get_faq_response(message)
@@ -66,11 +70,27 @@ async def process_chat(
             }
         )
 
+
+
+        if "ORDER_ID" in entities:
+            response = f"Your order #{entities['ORDER_ID']} is currently being processed."
+
+        elif "DATE" in entities:
+                    response = f"You mentioned the date {entities['DATE']}."
+
+        elif "GPE" in entities:
+            response = f"I found the location {entities['GPE']}."
+
+        elif "PRODUCT" in entities:
+            response = f"You are asking about {entities['PRODUCT']}."
+
+
+
         return {
             "session_id": session_id,
             "intent": intent_name,
             "response": response
-        }
+            }
 
     return {
             "session_id": session_id,

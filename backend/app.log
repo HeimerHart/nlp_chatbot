@@ -409,3 +409,105 @@
  2026-07-09 02:01:37,625 - INFO - Context: []
  2026-07-10 02:14:16,302 - INFO - Starting API...
  2026-07-10 02:14:21,902 - INFO - Starting API...
+ 2026-07-17 01:23:58,450 - INFO - Starting API...
+ 2026-07-17 01:24:21,391 - INFO - Starting API...
+ 2026-07-17 01:24:30,835 - INFO - Starting API...
+ 2026-07-17 01:51:01,799 - INFO - Request to chatbot
+ 2026-07-17 01:51:01,799 - INFO - Context: []
+ 2026-07-17 01:51:01,799 - INFO - User message: hiiii
+ 2026-07-17 01:51:01,848 - INFO - Entities: {}
+ 2026-07-17 01:51:01,848 - INFO - Context: []
+ 2026-07-17 01:51:06,312 - INFO - Request to chatbot
+ 2026-07-17 01:51:06,312 - INFO - Context: ['hiiii', 'I do not understand']
+ 2026-07-17 01:51:06,312 - INFO - User message: hi
+ 2026-07-17 01:51:06,315 - INFO - Entities: {}
+ 2026-07-17 01:51:06,315 - INFO - Context: ['hiiii', 'I do not understand']
+ 2026-07-17 01:55:45,478 - INFO - Request to chatbot
+ 2026-07-17 01:55:45,478 - INFO - Context: []
+ 2026-07-17 01:55:45,478 - INFO - User message: hi
+ 2026-07-17 01:55:45,488 - INFO - Entities: {}
+ 2026-07-17 01:55:45,488 - INFO - Context: []
+ 2026-07-17 01:56:06,671 - INFO - Request to chatbot
+ 2026-07-17 01:56:06,671 - INFO - Context: ['hi', 'hi']
+ 2026-07-17 01:56:06,671 - INFO - User message: refund
+ 2026-07-17 01:56:06,671 - INFO - Entities: {}
+ 2026-07-17 01:56:06,671 - INFO - Context: ['hi', 'hi']
+ 2026-07-17 01:59:14,064 - INFO - Request to chatbot
+ 2026-07-17 01:59:14,065 - INFO - Context: []
+ 2026-07-17 01:59:14,065 - INFO - User message: hii
+ 2026-07-17 01:59:14,082 - INFO - Entities: {'ORG': 'hii'}
+ 2026-07-17 01:59:14,083 - INFO - Context: []
+ 2026-07-17 01:59:23,086 - INFO - Request to chatbot
+ 2026-07-17 01:59:23,086 - INFO - Context: ['hii', 'I do not understand']
+ 2026-07-17 01:59:23,086 - INFO - User message: hi
+ 2026-07-17 01:59:23,105 - INFO - Entities: {}
+ 2026-07-17 01:59:23,105 - INFO - Context: ['hii', 'I do not understand']
+ 2026-07-17 11:34:26,511 - INFO - Starting API...
+ 2026-07-17 11:36:24,910 - INFO - Request to chatbot
+ 2026-07-17 11:36:24,913 - INFO - Context: []
+ 2026-07-17 11:36:24,915 - INFO - User message: hi
+ 2026-07-17 11:36:24,919 - INFO - Entities: {}
+ 2026-07-17 11:36:24,919 - INFO - Context: []
+ 2026-07-17 11:36:32,271 - INFO - Request to chatbot
+ 2026-07-17 11:36:32,271 - INFO - Context: ['hi', 'hi']
+ 2026-07-17 11:36:32,271 - INFO - User message: hi
+ 2026-07-17 11:36:32,289 - INFO - Entities: {}
+ 2026-07-17 11:36:32,289 - INFO - Context: ['hi', 'hi']
+ 2026-07-17 11:36:58,047 - INFO - Request to chatbot
+ 2026-07-17 11:36:58,047 - INFO - Context: ['hi', 'hi', 'hi', 'hi']
+ 2026-07-17 11:36:58,053 - INFO - User message: hi
+ 2026-07-17 11:36:58,060 - INFO - Entities: {}
+ 2026-07-17 11:36:58,060 - INFO - Context: ['hi', 'hi', 'hi', 'hi']
+ 2026-07-17 11:37:01,646 - INFO - Request to chatbot
+ 2026-07-17 11:37:01,646 - INFO - Context: ['hi', 'hi', 'hi', 'hi', 'hi']
+ 2026-07-17 11:37:01,646 - INFO - User message: hehheeh
+ 2026-07-17 11:37:01,663 - INFO - Entities: {}
+ 2026-07-17 11:37:01,663 - INFO - Context: ['hi', 'hi', 'hi', 'hi', 'hi']
+ 2026-07-17 11:37:08,890 - INFO - Request to chatbot
+ 2026-07-17 11:37:08,890 - INFO - Context: []
+ 2026-07-17 11:37:08,890 - INFO - User message: hehhe
+ 2026-07-17 11:37:08,898 - INFO - Entities: {}
+ 2026-07-17 11:37:08,898 - INFO - Context: []
+ 2026-07-17 11:37:15,820 - INFO - Request to chatbot
+ 2026-07-17 11:37:15,820 - INFO - Context: ['hehhe', 'I do not understand']
+ 2026-07-17 11:37:15,820 - INFO - User message: e
+ 2026-07-17 11:37:15,820 - INFO - Entities: {}
+ 2026-07-17 11:37:15,834 - INFO - Context: ['hehhe', 'I do not understand']
+ 2026-07-17 11:39:35,423 - INFO - Request to chatbot
+ 2026-07-17 11:39:35,423 - INFO - Context: ['hehhe', 'I do not understand', 'e', 'I do not understand']
+ 2026-07-17 11:39:35,423 - INFO - User message: i
+ 2026-07-17 11:39:35,431 - INFO - Entities: {}
+ 2026-07-17 11:39:35,431 - INFO - Context: ['hehhe', 'I do not understand', 'e', 'I do not understand']
+ 2026-07-17 11:39:46,374 - INFO - Request to chatbot
+ 2026-07-17 11:39:46,374 - INFO - Context: []
+ 2026-07-17 11:39:46,374 - INFO - User message: h
+ 2026-07-17 11:39:46,381 - INFO - Entities: {}
+ 2026-07-17 11:39:46,381 - INFO - Context: []
+ 2026-07-17 20:14:49,673 - INFO - Request to chatbot
+ 2026-07-17 20:14:49,693 - INFO - Context: []
+ 2026-07-17 20:14:49,701 - INFO - User message: refund
+ 2026-07-17 20:14:49,949 - INFO - Entities: {}
+ 2026-07-17 20:14:49,949 - INFO - Context: []
+ 2026-07-17 20:14:51,930 - INFO - Request to chatbot
+ 2026-07-17 20:14:51,931 - INFO - Context: ['refund', 'Please provide order id']
+ 2026-07-17 20:14:51,931 - INFO - User message: 123
+ 2026-07-17 20:14:51,948 - INFO - Entities: {'CARDINAL': '123'}
+ 2026-07-17 20:14:51,948 - INFO - Context: ['refund', 'Please provide order id']
+ 2026-07-17 20:14:56,638 - INFO - Request to chatbot
+ 2026-07-17 20:14:56,638 - INFO - Context: ['refund', 'Please provide order id', '123', 'I do not understand']
+ 2026-07-17 20:14:56,646 - INFO - User message: eheh
+ 2026-07-17 20:14:56,662 - INFO - Entities: {}
+ 2026-07-17 20:14:56,662 - INFO - Context: ['refund', 'Please provide order id', '123', 'I do not understand']
+ 2026-07-17 20:15:05,973 - INFO - Request to chatbot
+ 2026-07-17 20:15:05,980 - INFO - Context: ['Please provide order id', '123', 'I do not understand', 'eheh', 'I do not understand']
+ 2026-07-17 20:15:05,980 - INFO - User message: jij
+ 2026-07-17 20:15:05,988 - INFO - Entities: {}
+ 2026-07-17 20:15:05,988 - INFO - Context: ['Please provide order id', '123', 'I do not understand', 'eheh', 'I do not understand']
+ 2026-07-17 20:15:08,730 - INFO - Request to chatbot
+ 2026-07-17 20:15:08,730 - INFO - Context: ['I do not understand', 'eheh', 'I do not understand', 'jij', 'I do not understand']
+ 2026-07-17 20:15:08,730 - INFO - User message: ok
+ 2026-07-17 20:15:08,746 - INFO - Entities: {}
+ 2026-07-17 20:15:08,746 - INFO - Context: ['I do not understand', 'eheh', 'I do not understand', 'jij', 'I do not understand']
+ 2026-07-17 20:16:43,220 - INFO - Starting API...
+ 2026-07-17 20:19:17,802 - INFO - Starting API...
+ 2026-07-17 20:19:34,645 - INFO - Starting API...

@@ -8,6 +8,11 @@ import ChatBot from "./chatbot";
 
 const App = () => {
 
+    const logout = () => {
+    localStorage.removeItem("token");
+    window.location.reload();
+};
+
     const [loggedIn, setLoggedIn] = useState(
         !!localStorage.getItem("token")
     );
@@ -33,7 +38,7 @@ const App = () => {
         return <Admin />;
     }
 
-    return <Login />;
+    return <ChatBot />;
 
 };
 

@@ -511,3 +511,41 @@
  2026-07-17 20:16:43,220 - INFO - Starting API...
  2026-07-17 20:19:17,802 - INFO - Starting API...
  2026-07-17 20:19:34,645 - INFO - Starting API...
+ 2026-07-23 12:53:32,462 - INFO - Starting API...
+ 2026-07-23 12:53:50,947 - INFO - Starting API...
+ 2026-07-23 13:15:26,828 - INFO - Request to chatbot
+ 2026-07-23 13:15:26,831 - INFO - Context: []
+ 2026-07-23 13:15:26,831 - INFO - User message: hey
+ 2026-07-23 13:15:26,905 - INFO - Entities: {}
+ 2026-07-23 13:15:26,905 - INFO - Context: []
+ 2026-07-23 13:15:28,172 - INFO - Request to chatbot
+ 2026-07-23 13:15:28,172 - INFO - Context: ['hey', 'hi']
+ 2026-07-23 13:15:28,172 - INFO - User message: hey
+ 2026-07-23 13:15:28,190 - INFO - Entities: {}
+ 2026-07-23 13:15:28,191 - INFO - Context: ['hey', 'hi']
+ 2026-07-23 13:15:29,296 - INFO - Request to chatbot
+ 2026-07-23 13:15:29,297 - INFO - Context: ['hey', 'hi', 'hey', 'hi']
+ 2026-07-23 13:15:29,297 - INFO - User message: hey
+ 2026-07-23 13:15:29,317 - INFO - Entities: {}
+ 2026-07-23 13:15:29,318 - INFO - Context: ['hey', 'hi', 'hey', 'hi']
+ 2026-07-23 13:15:31,377 - INFO - Request to chatbot
+ 2026-07-23 13:15:31,378 - INFO - Context: ['hi', 'hey', 'hi', 'hey', 'hi']
+ 2026-07-23 13:15:31,378 - INFO - User message: refund
+ 2026-07-23 13:15:31,398 - INFO - Entities: {}
+ 2026-07-23 13:15:31,398 - INFO - Context: ['hi', 'hey', 'hi', 'hey', 'hi']
+ 2026-07-23 13:15:34,364 - INFO - Request to chatbot
+ 2026-07-23 13:15:34,364 - INFO - Context: ['hi', 'hey', 'hi', 'refund', 'Please provide order id']
+ 2026-07-23 13:15:34,364 - INFO - User message: oh
+ 2026-07-23 13:15:34,381 - INFO - Entities: {}
+ 2026-07-23 13:15:34,381 - INFO - Context: ['hi', 'hey', 'hi', 'refund', 'Please provide order id']
+ 2026-07-23 13:15:36,290 - INFO - Request to chatbot
+ 2026-07-23 13:15:36,291 - INFO - Context: ['hi', 'refund', 'Please provide order id', 'oh', 'I do not understand']
+ 2026-07-23 13:15:36,291 - INFO - User message: um
+ 2026-07-23 13:15:36,306 - INFO - Entities: {}
+ 2026-07-23 13:15:36,307 - INFO - Context: ['hi', 'refund', 'Please provide order id', 'oh', 'I do not understand']
+ 2026-07-23 13:15:37,551 - INFO - Request to chatbot
+ 2026-07-23 13:15:37,551 - INFO - Context: ['Please provide order id', 'oh', 'I do not understand', 'um', 'I do not understand']
+ 2026-07-23 13:15:37,553 - INFO - User message: okay
+ 2026-07-23 13:15:37,568 - INFO - Entities: {}
+ 2026-07-23 13:15:37,568 - INFO - Context: ['Please provide order id', 'oh', 'I do not understand', 'um', 'I do not understand']
+ 2026-07-23 13:19:27,990 - INFO - Starting API...

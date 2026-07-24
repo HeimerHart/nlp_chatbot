@@ -4,6 +4,8 @@ from services.intentclassifier import predict_intent
 from services.preprocessor import NLPPreprocessor
 from services.faq import get_faq_response
 from services.ner_service import extract_entities
+from services.validator import sanitize
+
 
 
 processor = NLPPreprocessor()
@@ -18,7 +20,7 @@ async def process_chat(
     message: str,
     context: list = []
 ):
-
+    message = sanitize(message)
     logger.info(f'User message: {message}')
 
     entities = extract_entities(message)

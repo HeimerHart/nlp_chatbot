@@ -23,3 +23,20 @@ client = MongoClient(MONGODB_URI)
 db = client[DATABASE_NAME]
 
 print("MongoDB Connected Successfully")
+
+db["users"].create_index(
+    "email",
+    unique=True
+)
+
+db["conversations"].create_index(
+    "session_id"
+)
+
+db["conversations"].create_index(
+    "user_id"
+)
+
+db["analytics"].create_index(
+    "date"
+)

@@ -1,5 +1,6 @@
 from fastapi import APIRouter
 from database.mongodb import db
+from services.cache import conversation_cache
 
 router = APIRouter(
     prefix="/api/conversations",
@@ -18,7 +19,7 @@ async def get_all_conversations():
             {"_id": 0}
         )
     )
-
+    conversation_cache["all_conversations"] = conversations
     return conversations
 
 
@@ -26,6 +27,8 @@ async def get_all_conversations():
 async def get_session_history(
     session_id: str
 ):
+    if session_id in conversation_cache:
+        return conversation_cache[session_id]
 
     conversations = list(
         conversation_collection.find(
@@ -37,5 +40,5 @@ async def get_session_history(
             }
         )
     )
-
+    conversation_cache[session_id] = conversations
     return conversations

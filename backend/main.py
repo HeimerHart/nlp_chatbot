@@ -8,9 +8,21 @@ from routes.auth_route import router as auth_router
 from routes.conversation_route import router as conversation_router
 from routes.admin_route import router as admin_router
 from routes.analytics_route import router as analytics_router
+from slowapi import Limiter
+from slowapi.util import get_remote_address
+from slowapi.middleware import SlowAPIMiddleware
+from secure import Secure
 
 
 app = FastAPI()
+
+secure_headers = Secure()
+
+limiter = Limiter(key_func=get_remote_address)
+app.state.limiter = limiter
+app.add_middleware(SlowAPIMiddleware)
+
+
 logger.info('Starting API...')
 
 app.include_router(
@@ -51,6 +63,16 @@ async def health() -> dict:
     return{
         'message':'Health'  
           }
+
+
+@app.middleware("http")
+async def add_secure_headers(request, call_next):
+
+    response = await call_next(request)
+
+    secure_headers.framework.fastapi(response)
+
+    return response
 
 
 

@@ -1,7 +1,8 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Depends
 from database.mongodb import db
 from collections import Counter
 from datetime import datetime
+from middleware.admin_middleware import get_current_admin
 
 
 router = APIRouter()
@@ -9,7 +10,7 @@ router = APIRouter()
 conversation_collection = db["conversations"]
 
 @router.get("/api/analytics")
-async def get_analytics():
+async def get_analytics(admin=Depends(get_current_admin)):
 
     conversations = list(
         conversation_collection.find({})

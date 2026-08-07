@@ -1,6 +1,6 @@
 from fastapi import Depends, HTTPException
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
-from jose import jwt 
+from jose import jwt
 from database.mongodb import db
 from utils.jwt_handler import SECRET_KEY, ALGORITHM
 

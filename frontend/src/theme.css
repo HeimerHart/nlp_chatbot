@@ -1,9 +1,37 @@
-:root{
-    --primary-color: #020817;
-    --primary-color2: #172b4d;
-    --secondary-color: #0b1424;
-    --text-color: #111827;
-    --bot-message: #cedbf9;
-    --user-message: #7ca1ff;
-    --warm-bg:#fdfbf5;
+:root {
+
+  --font-sans: Helvetica, "Helvetica Neue", Arial, sans-serif;
+
+  --bg: #0a0a0a;
+  --bg-elevated: #121212;
+  --surface: #191919;
+  --surface-2: #212121;
+  --border: rgba(255, 255, 255, 0.1);
+  --border-strong: rgba(255, 255, 255, 0.2);
+
+  --text: #f2f2f0;
+  --text-muted: #97979b;
+  --text-faint: #5c5c60;
+
+  --accent: #f2f2f0;
+  --accent-strong: #ffffff;
+  --accent-ink: #0a0a0a;
+  --accent-soft: rgba(242, 242, 240, 0.08);
+  --accent-border: rgba(242, 242, 240, 0.3);
+
+  --danger: #e5484d;
+  --danger-soft: rgba(229, 72, 77, 0.1);
+  --danger-border: rgba(229, 72, 77, 0.35);
+  --success: #2f9e63;
+
+  --bot-bubble: var(--surface);
+  --user-bubble: var(--accent);
+  --user-bubble-text: var(--accent-ink);
+
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-pill: 999px;
+
+  --shadow-lift: 0 20px 44px -26px rgba(0, 0, 0, 0.6);
 }

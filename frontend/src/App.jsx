@@ -5,7 +5,6 @@ import Admin from "./AdminDashboard";
 import Login from "./Login";
 import ChatBot from "./chatbot";
 
-
 const App = () => {
 
     const logout = () => {

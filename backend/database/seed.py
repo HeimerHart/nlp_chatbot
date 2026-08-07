@@ -1,110 +1,98 @@
+import bcrypt
 from database.mongodb import db
-intent_collection=db["intents"]
 
-sample_intents=[
+intent_collection = db["intents"]
+user_collection = db["users"]
+
+sample_intents = [
 
 {
     "name": "greeting",
-    "patterns":["hi","hello","hey"],
-    "responses":["hi","hello","hey"],
-
-
-
+    "patterns": ["hi", "hello", "hey", "good morning"],
+    "responses": ["Hi! How can I help today?"],
 },
-
 
 {
-    "name": "goodbye",
-    "patterns":["bye","goodbye"],
-    "responses":["Byee"],
-
-
-
+    "name": "order_tracking",
+    "patterns": ["where is my order", "track my order", "order status"],
+    "responses": ["I can help you locate it."],
 },
-
 
 {
     "name": "refund",
-    "patterns":["refund","i want refund","refund me"],
-    "responses":["Please provide order id"],
-
-
-
+    "patterns": ["refund", "i want a refund", "money back"],
+    "responses": ["I'm sorry about that — let's get your refund moving."],
 },
 
 {
-    "name": "order_status",
-    "patterns":["order status","where is my order"],
-    "responses":["please provide order id"],
-
-
-
-},
-
-
-{
-    "name": "order_cancel",
-    "patterns":["cancel","cancel my order"],
-    "responses":["please provide order id"],
-
-
-
+    "name": "payment_issue",
+    "patterns": ["payment failed", "card declined", "charged twice"],
+    "responses": ["Sorry your payment didn't go through cleanly."],
 },
 
 {
-    "name": "products",
-    "patterns":["what are the services you offer","services"],
-    "responses":["here is our catalogue: "],
-
-
-
+    "name": "order_issue",
+    "patterns": ["wrong item", "missing item", "order damaged"],
+    "responses": ["I'm sorry to hear the order wasn't right. Let's fix it."],
 },
-
 
 {
-    "name": "suppport",
-    "patterns":["support","human"],
-    "responses":["Someone will shortly assist you"],
-
-
-
+    "name": "delivery_partner",
+    "patterns": ["rider was rude", "driver couldn't find address"],
+    "responses": ["Thanks for flagging this — issues with a delivery partner are taken seriously."],
 },
-
 
 {
-    "name": "information",
-    "patterns":["tell me","price of"],
-    "responses":["details of the products are as follows"],
-
-
-
+    "name": "account_support",
+    "patterns": ["reset my password", "login issue", "update my email"],
+    "responses": ["Happy to help with your account. What do you need?"],
 },
-
 
 {
-    "name": "thanks",
-    "patterns":["Thanks","thankyou","bye"],
-    "responses":["welcome"],
-
-
-
+    "name": "human_agent",
+    "patterns": ["talk to a human", "connect me to an agent", "escalate"],
+    "responses": ["Got it — connecting you with a human agent."],
 },
-
 
 {
-    "name": "order_status",
-    "patterns":["order status","where is my order"],
-    "responses":["please provide order id"],
-
-
-
+    "name": "smalltalk",
+    "patterns": ["how are you", "tell me a joke", "good bot"],
+    "responses": ["Ha, I'll take that! Anything I can actually help you sort out today?"],
 },
 
+{
+    "name": "bye",
+    "patterns": ["bye", "goodbye", "see ya"],
+    "responses": ["Bye! Reach out anytime you need help."],
+},
 
-
+{
+    "name": "thankyou",
+    "patterns": ["thanks", "thank you", "thankyou"],
+    "responses": ["You're welcome! Anything else I can help with?"],
+},
 
 ]
 
-intent_collection.insert_many(sample_intents)
+if intent_collection.count_documents({}) == 0:
+    intent_collection.insert_many(sample_intents)
+    print("Sample intents inserted successfully")
+else:
+    print("Intents already seeded, skipping")
 
-print("Sample intents inserted successfully")
+admin_email = "admin@chatbot.com"
+admin_password = "Admin@123"
+
+if not user_collection.find_one({"email": admin_email}):
+    hashed_password = bcrypt.hashpw(
+        admin_password.encode("utf-8"),
+        bcrypt.gensalt()
+    )
+    user_collection.insert_one({
+        "email": admin_email,
+        "password": hashed_password.decode("utf-8"),
+        "role": "admin"
+    })
+    print(f"Admin user created -> email: {admin_email} password: {admin_password}")
+else:
+    print("Admin user already exists, skipping")

@@ -34,8 +34,10 @@ async def get_users(admin=Depends(get_current_admin)):
 
 @router.get("/api/admin/conversations")
 async def get_all_conversations(admin=Depends(get_current_admin)):
-    return list(conversation_collection.find({}, {"_id": 0}))
+    return list(conversation_collection.find({}, {"_id": 0}).sort("timestamp", 1))
 
 @router.get("/api/admin/conversations/{session_id}")
 async def get_session(session_id: str, admin=Depends(get_current_admin)):
-    return list(conversation_collection.find({"session_id": session_id}, {"_id": 0}))
+    return list(
+        conversation_collection.find({"session_id": session_id}, {"_id": 0}).sort("timestamp", 1)
+    )

@@ -14,5 +14,6 @@ async def chatbot(request: ChatRequest):
     return await process_chat(
         request.session_id,
         request.message,
-        request.context
+        request.context,
+        request.conversation_id
     )

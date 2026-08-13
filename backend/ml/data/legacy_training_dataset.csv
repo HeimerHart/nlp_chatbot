@@ -1,0 +1,177 @@
+text,intent
+Thank you,thankyou
+Thanks!,thankyou
+Thank you!,thankyou
+Thanks a lot!,thankyou
+Thanks so much!,thankyou
+Many thanks!,thankyou
+Appreciate it!,thankyou
+"Thanks, I really appreciate it.",thankyou
+"You're the best, thanks!",thankyou
+Thanks,thankyou
+bye,bye
+byeee,bye
+Bye!,bye
+Goodbye!,bye
+See you later!,bye
+See you soon!,bye
+Catch you later!,bye
+Take care!,bye
+Have a good one!,bye
+Talk to you later!,bye
+Until next time!,bye
+Take care!,bye
+See you around!,bye
+Until next time.,bye
+All the best!,bye
+Stay safe.,bye
+Have a great day!,bye
+Catch you later!,bye
+Goodbye for now.,bye
+Talk soon!,bye
+Goodbye,bye
+hello,greeting
+hi,greeting
+hey,greeting
+good morning,greeting
+good evening,greeting
+good afternoon,greeting
+greetings,greeting
+howdy,greeting
+hiya,greeting
+hello there,greeting
+hey there,greeting
+nice to meet you,greeting
+what's up,greeting
+good day,greeting
+morning,greeting
+evening,greeting
+hi chatbot,greeting
+hello bot,greeting
+hey bot,greeting
+greetings friend,greeting
+How are you?,greeting
+How can I pay my bill?,billing
+I have a billing issue,billing
+My invoice is incorrect,billing
+Why was I charged twice?,billing
+Can I change my payment method?,billing
+I need help with billing,billing
+My payment was declined,billing
+How do I update my card details?,billing
+I was overcharged,billing
+Show my invoice,billing
+Where can I view my bill?,billing
+My payment failed,billing
+I need a billing statement,billing
+Can I get a copy of my invoice?,billing
+How much do I owe?,billing
+What payment methods are accepted?,billing
+I want to check my charges,billing
+My account was billed incorrectly,billing
+Can I pay using UPI?,billing
+I have a question about my payment,billing
+How can I pay my bill?,billing
+I have a billing issue,billing
+My invoice is incorrect,billing
+Why was I charged twice?,billing
+Can I change my payment method?,billing
+I need help with billing,billing
+My payment was declined,billing
+How do I update my card details?,billing
+I was overcharged,billing
+Show my invoice,billing
+Where can I view my bill?,billing
+My payment failed,billing
+I need a billing statement,billing
+Can I get a copy of my invoice?,billing
+How much do I owe?,billing
+What payment methods are accepted?,billing
+I want to check my charges,billing
+My account was billed incorrectly,billing
+Can I pay using UPI?,billing
+I have a question about my payment,billing
+I want a refund,refund
+How do I get a refund?,refund
+Refund my money,refund
+Return my payment,refund
+I need reimbursement,refund
+Can I request a refund?,refund
+My refund is pending,refund
+Refund request status,refund
+I want to return an item,refund
+How long does a refund take?,refund
+I was charged wrongly,refund
+Cancel and refund my order,refund
+When will I receive my refund?,refund
+Refund not received,refund
+Please process my refund,refund
+I need a return and refund,refund
+How can I return a product?,refund
+I am unhappy and want a refund,refund
+Refund amount not credited,refund
+Requesting a refund,refund
+Hello,general_inquiry
+Hi there,general_inquiry
+Can you help me?,general_inquiry
+I have a question,general_inquiry
+What services do you provide?,general_inquiry
+Tell me more about your company,general_inquiry
+Can you assist me?,general_inquiry
+I need information,general_inquiry
+What can you do?,general_inquiry
+Can I ask something?,general_inquiry
+I want to know more,general_inquiry
+Please help me,general_inquiry
+See you later,general_inquiry
+Nice to meet you,general_inquiry
+The app is crashing,technical_support
+I cannot login,technical_support
+Website is not working,technical_support
+Password reset failed,technical_support
+I am getting an error,technical_support
+The page won't load,technical_support
+Login issue,technical_support
+My account is locked,technical_support
+Application not responding,technical_support
+System error occurred,technical_support
+Unable to access my account,technical_support
+The website is down,technical_support
+Bug in the application,technical_support
+App keeps freezing,technical_support
+Server error message,technical_support
+I forgot my password,technical_support
+The software is malfunctioning,technical_support
+I cannot sign in,technical_support
+Technical issue with my account,technical_support
+Need technical assistance,technical_support
+I want to speak to a human.,S
+Can I talk to a real person?,human
+Connect me to an agent.,human
+I need customer support.,human
+Let me speak to someone.,human
+Can I talk to a representative?,human
+I'd like to speak with a support agent.,human
+Transfer me to a human.,human
+Put me through to customer service.,human
+I need to speak with your team.,human
+This chatbot isn't helping.,human
+I need a real person.,human
+Can I stop talking to the bot?,human
+I want to talk to someone else.,human
+Please connect me with an actual person.,human
+You're not understanding me.,human
+I need human assistance.,human
+Get me a support agent.,human
+I need someone who can actually help.,human
+Can you escalate this to a human?,human
+Human.,human
+Agent.,human
+Live agent.,human
+Representative.,human
+Customer service.,human
+Support.,human
+Help me.,human
+Real person.,human
+Talk to someone.,human
+Connect me.,human

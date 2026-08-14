@@ -30,7 +30,7 @@ const isLocalHost = ["localhost", "127.0.0.1"].includes(window.location.hostname
 
 const baseURL =
   import.meta.env.VITE_API_URL ||
-  (isLocalHost ? "http://localhost:8000" : "https://nlp-chatbot-backend.onrender.com");
+  (isLocalHost ? "http://localhost:8000" : "https://nlp-chatbot-bck.onrender.com");
 
 const api = axios.create({ baseURL });
 

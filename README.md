@@ -4,6 +4,13 @@ An AI-powered customer support chatbot built with React (frontend) and FastAPI (
 Uses a Naive Bayes + TF-IDF intent classifier, spaCy NER, and FAQ fuzzy-matching to answer
 customer queries, with a full auth system and an admin dashboard.
 
+Credentials:
+admin@chatbot.com
+Admin@123
+
+user@chatbot.com
+user@123
+
 ---
 
 ## Prerequisites
@@ -29,13 +36,16 @@ pip install -r requirements.txt
 ```
 
 ### Configure environment variables
+
 Copy the example env file and fill in your own values:
+
 ```bash
 cp .env.example .env      # macOS/Linux
 copy .env.example .env    # Windows
 ```
 
 Edit `.env`:
+
 ```
 APP_NAME=AI Customer Support Chatbot
 DEBUG=True
@@ -45,27 +55,34 @@ DATABASE_NAME=chatbot_db
 JWT_SECRET_KEY=<a long random string -- do NOT keep the placeholder>
 JWT_ALGORITHM=HS256
 ```
+
 Generate a JWT secret with:
+
 ```bash
 python -c "import secrets; print(secrets.token_hex(32))"
 ```
 
 ### Seed the database
+
 Creates the sample intents and the default admin account:
+
 ```bash
 python -m database.seed
 ```
 
 ### Run the backend
+
 ```bash
 python main.py
 ```
+
 Server runs at `http://localhost:8000`.
 
 > **Known first-run issue:** if chat messages fail with a generic "Something went wrong"
 > error, NLTK is missing the `punkt_tab` tokenizer resource. This project's
 > `services/preprocessor.py` downloads it automatically on startup, but if your NLTK
 > cache is already partially populated from a previous install, run this once manually:
+>
 > ```bash
 > python -c "import nltk; nltk.download('punkt_tab')"
 > ```
@@ -75,11 +92,13 @@ Server runs at `http://localhost:8000`.
 ## 2. Frontend setup
 
 In a **second** terminal:
+
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
+
 Opens at `http://localhost:5173`.
 
 ---
@@ -87,10 +106,12 @@ Opens at `http://localhost:5173`.
 ## 3. Logging in
 
 **Admin** (created automatically by the seed script):
+
 ```
 Email:    admin@chatbot.com
 Password: Admin@123
 ```
+
 Logging in with this account routes straight to the admin dashboard: users, intents,
 conversation logs, and analytics.
 
